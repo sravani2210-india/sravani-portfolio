@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sravani Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div id="loader">
+<h2>Loading Portfolio...</h2>
+</div>
+<div id="progress"></div>
+<button id="topBtn">↑</button>
+<!-- NAVBAR -->
+<nav>
+<h2 class="logo">Sravani</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button onclick="toggleTheme()">🌙 Dark Mode</button>
+<button id="modeToggle">🌙</button>
+</nav>
+<!-- PARTICLES BACKGROUND -->
+<!-- HOME -->
+<h1>Hi, I'm Sravani</h1>
+<section id="home">
+<div id="particles-js"></div>
+<div class="home-container">
+<img src="https://i.postimg.cc/xTVQ326q/IMG-20260302-162554.jpg" class="profile">
+<h1>Hi, I'm Sravani</h1>
+<h2><span id="typing"></span></h2>
+<a href="https://docs.google.com/document/d/1PkQ7WT76tAhveo5hR70_4XeaMcwAovMf/edit?usp=sharing&ouid=115403722569482669825&rtpof=true&sd=true" class="btn">
+View Resume
+</a>
+<a href="resume.pdf" download class="btn">Download Resume</a>
+<!-- SOCIAL ICONS -->
+<div class="social">
+<a href="https://github.com/sravani2210-india" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/in/sravanipasupuleti2210/" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+</div>
+<img src="https://github-readme-stats.vercel.app/api?username=sravani2210-india&show_icons=true">
+<!-- SLIDESHOW -->
+<div class="slideshow">
+<div class="slide">🏆 Hackathon Participant</div>
+<div class="slide">💻 AI & ML Enthusiast</div>
+<div class="slide">🚀 Future Software Engineer</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a passionate Computer Science student interested in Artificial Intelligence,
+Machine Learning and Web Development.
+</p>
+<div class="timeline">
+<div class="timeline-item">
+<h3>2022</h3>
+<p>Started Computer Science Degree</p>
+</div>
+<div class="timeline-item">
+<h3>2023</h3>
+<p>Worked on Machine Learning projects</p>
+</div>
+<div class="timeline-item">
+<h3>2024</h3>
+<p>Participated in coding competitions</p>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="project-container">
+<div class="project-card"
+data-title="AI Chatbot"
+data-text="Python chatbot using NLP"
+onclick="openPopup(
+'AI Chatbot',
+'Python chatbot using NLP',
+'https://i.postimg.cc/mZF7ZSss/ai.jpg'
+)">
+<img src="https://i.postimg.cc/W1YnK1V2/chatbot.jpg">
+<h3>AI Chatbot</h3>
+<p>Python + NLP chatbot</p>
+</div>
+<div class="project-card"
+onclick="openPopup(
+'Sentiment Analysis',
+'Analyzed text data using machine learning',
+'https://i.postimg.cc/Z5XNpBZR/sentiment.png'
+)">
+<img src="https://i.postimg.cc/Z5XNpBZR/sentiment.png">
+<h3>Sentiment Analysis</h3>
+<p>Analyzed text data using machine learning.</p>
+</div>
+<div class="project-card"
+onclick="openPopup(
+'Portfolio Website',
+'Responsive website using HTML CSS JavaScript',
+'https://i.postimg.cc/XJ14BF6X/portfolio.png'
+)">
+<img src="https://i.postimg.cc/XJ14BF6X/portfolio.png">
+<h3>Portfolio Website</h3>
+<p>Responsive website using HTML CSS JavaScript.</p>
+</div>
+  <div id="popup" class="popup">
+<div class="popup-content">
+<span class="close">&times;</span>
+<h2 id="popupTitle"></h2>
+<p id="popupText"></p>
+<img id="projectImage" width="100%">
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skill">
+HTML
+<div class="bar"><div class="progress HTML"></div></div>
+</div>
+<div class="skill">
+CSS
+<div class="bar"><div class="progress CSS"></div></div>
+</div>
+<div class="skill">
+JavaScript
+<div class="bar"><div class="progress js"></div></div>
+</div>
+<div class="skill">
+Python
+<div class="bar"><div class="progress python"></div></div>
+</div>
+<div class="skill">
+<p>HTML/CSS</p>
+<div class="skill-bar">
+<div class="skill-fill web"></div>
+</div>
+</div>
+</section>
+<i class="fab fa-python"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-html5"></i>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message"></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+<p id="formMsg"></p>
+</section>
+<img src="https://komarev.com/ghpvc/?username=sravani2210-india&color=blue">
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+<div id="chatbot">
+<div id="chat-header">
+Ask Me 💬
+</div>
+<div id="chat-body"></div>
+<input 
+id="chat-input"
+type="text"
+placeholder="Ask something..."
+>
+</div>
+</body>
+</html>
